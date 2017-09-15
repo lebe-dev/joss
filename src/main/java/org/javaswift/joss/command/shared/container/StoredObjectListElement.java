@@ -1,7 +1,9 @@
 package org.javaswift.joss.command.shared.container;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class StoredObjectListElement {
 
     public String subdir;
